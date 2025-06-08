@@ -1,0 +1,13 @@
+{
+    "name": "Anthropic Claude Code Base Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "--env-file": ".env"
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "postStartCommand": "claude"
+}
